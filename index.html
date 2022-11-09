@@ -189,7 +189,47 @@
 					information such as lines, edges, shapes, and even objects.
 					In addition, to further improve the robustness performance.</p>
             </td>
+          </tr>
+		
+		  <tr onmouseout="nightsight_stop_()" onmouseover="nightsight_start_()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='nightsight_image_'><img src='Doc/MedVit.png'></div>
+                <img src='Doc/MedVit.png'>
+
+              </div>
+              <script type="text/javascript">
+                function nightsight_start_() {
+                  document.getElementById('nightsight_image_').style.opacity = "1";
+                }
+                function nightsight_stop_() {
+                  document.getElementById('nightsight_image_').style.opacity = "0";
+                }
+                nightsight_stop_()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle;text-align: justify">
+
+                <papertitle> Robust Transformer with Locality Inductive Bias and Feature Normalization.</papertitle>
+			  <br>
+              <strong>Omid Nejati Manzari</strong>,
+			   Hossein Kashiani,
+			  <a href="https://scholar.google.ca/citations?hl=en&user=sMPEoRcAAAAJ&view_op=list_works&sortby=pubdate">Shahriar B. Shokouhi</a>
+
+              <p>In this study, we propose a highly robust yet efficient
+			CNN-Transformer hybrid model which is equipped with the locality of CNNs as well as the global
+			connectivity of vision Transformers. To mitigate the high quadratic complexity of the self-attention
+			mechanism while jointly attending to information in various representation subspaces, we construct
+			our attention mechanism by means of an efficient convolution operation. Moreover, to alleviate the
+			fragility of our Transformer against adversarial attacks, we attempt to smooth out various directions
+			of the decision boundary. To this end, we change the shape (or style) context of different instances in
+			the high-level feature space by permuting the feature mean and variance across different instances.
+			With less computational complexity, our proposed hybrid model demonstrates its high robustness
+			and generalization ability compared to the state-of-the-art studies on a large-scale collection of
+			standardized MedMNIST-2D datasets.</p>
+            </td>
           </tr>	  
+		
 	</tbody></table>
         <table style="width:100%;"><tbody>
             <tr>
