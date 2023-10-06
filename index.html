@@ -259,8 +259,8 @@
         <tr onmouseout="nightsight_stop_()" onmouseover="nightsight_start_()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
-                <div class="two" id='nightsight_image_'><img src='Doc/MedViT1.png'></div>
-                <img src='Doc/MedVit.png'>
+                <div class="two" id='nightsight_image_'><img src='Doc/dilated.jpg'></div>
+                <img src='Doc/dilated.jpg'>
 
               </div>
               <script type="text/javascript">
@@ -275,25 +275,22 @@
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle;text-align: justify">
 
-                <papertitle> MedViT: A Robust Vision Transformer for Generalized Medical Image Classification.</papertitle>
+                <papertitle> Dilated-UNet: A Fast and Accurate Medical Image Segmentation Approach 
+			     using a Dilated Transformer and U-Net Architecture.</papertitle>
 			  <br>
-              <strong>Omid Nejati Manzari</strong>,
-		    	   Hamid Ahmadabadi,
-			   Hossein Kashiani,
-			  <a href="https://scholar.google.ca/citations?hl=en&user=sMPEoRcAAAAJ&view_op=list_works&sortby=pubdate">Shahriar B. Shokouhi</a>
+		      Davoud Saadati,
+              	     <strong>Omid Nejati Manzari</strong>,
+		     Sattar Mirzakuchaki
+	
 		    	
 
-              <p>In this study, we propose a highly robust yet efficient
-			CNN-Transformer hybrid model which is equipped with the locality of CNNs as well as the global
-			connectivity of vision Transformers. To mitigate the high quadratic complexity of the self-attention
-			mechanism while jointly attending to information in various representation subspaces, we construct
-			our attention mechanism by means of an efficient convolution operation. Moreover, to alleviate the
-			fragility of our Transformer against adversarial attacks, we attempt to smooth out various directions
-			of the decision boundary. To this end, we change the shape (or style) context of different instances in
-			the high-level feature space by permuting the feature mean and variance across different instances.
-			With less computational complexity, our proposed hybrid model demonstrates its high robustness
-			and generalization ability compared to the state-of-the-art studies on a large-scale collection of
-			standardized MedMNIST-2D datasets.</p>
+              <p>This paper introduces DilatedUNet, which combines a Dilated Transformer block with
+			the U-Net architecture for accurate and fast medical image segmentation. Image patches are transformed into tokens and fed into the U-shaped encoder-decoder architecture, with skip-connections for local-global semantic feature learning. The encoder uses a hierarchical Dilated
+			Transformer with a combination of Neighborhood Attention
+			and Dilated Neighborhood Attention Transformer to extract
+			local and sparse global attention. The results of our experiments show that Dilated-UNet outperforms other models on
+			several challenging medical image segmentation datasets,
+			such as ISIC and Synapse.</p>
             </td>
           </tr>	   
 		
